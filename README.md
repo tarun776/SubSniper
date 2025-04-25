@@ -1,6 +1,4 @@
-# SubSniper
-
-# SubSniper - Subdomain Vulnerability Checker
+# SubSniper - Subdomain Takeover Checker chrome extesion
 
 **SubSniper** is a Chrome extension designed to automatically check subdomains for potential takeover vulnerabilities. It uses body fingerprinting and service detection to alert you when a subdomain is vulnerable to takeover
 
