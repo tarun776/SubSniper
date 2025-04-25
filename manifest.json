@@ -1,0 +1,34 @@
+/*
+This Chrome extension uses fingerprints from "can-i-take-over-xyz" to detect possible subdomain takeover.
+It checks the current URL's body content and CNAME record to match fingerprints.
+*/
+
+// manifest.json
+{
+  "manifest_version": 3,
+  "name": "Subdomain Vulnerability Checker",
+  "version": "1.1",
+  "description": "Detects potential subdomain takeovers based on known fingerprints (body content and CNAME).",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "128": "icon.png"
+  }
+}
