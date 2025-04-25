@@ -6,6 +6,8 @@ This tool helps security professionals and researchers easily identify and addre
 
 ---
 
+## Video POC
+
 ## Features
 - **Fingerprinting-Based Detection**: SubSniper checks the body of subdomain pages for specific service fingerprints, which are indicators of vulnerable services.
 - **Real-Time Alerts**: If a vulnerability is detected, SubSniper will show a red alert with the details and highlight the issue.
